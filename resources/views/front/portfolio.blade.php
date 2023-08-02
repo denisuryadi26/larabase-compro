@@ -97,7 +97,7 @@
                         <div class="mansory-sizer"></div>
                         @foreach ($portfolio as $portfolio)
                         <div class="mansory-item m-2 portfolio-item filter-web">
-                            <img src="image/{{$portfolio->image}}" alt="" class="img-fluid" />
+                            <img src="{{asset('storage/images/')}}/{{$portfolio->image}}" alt="" class="img-fluid" />
                         </div>
                         @endforeach
                     </div>

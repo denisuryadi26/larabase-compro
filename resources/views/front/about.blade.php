@@ -126,7 +126,7 @@
                 @foreach ($teams as $team)
                 <div class="col-md-3" data-aos="fade-up">
                     <div class="card" style="width: 18rem;">
-                        <img src="image/{{$team->image}}" class="card-img-top" alt="...">
+                        <img src="{{asset('storage/images/')}}/{{$team->image}}" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                             <h5 class="card-title text-bold">{{$team->title}}</h5>
                             <p class="card-text text-muted">{{$team->description}}</p>
@@ -148,7 +148,7 @@
             <div class="row mt-5">
                 @foreach($clients as $client)
                 <div class="col-md-3 pt-5 text-center" data-aos="zoom-in">
-                    <img src="image/{{$client->image}}" class="img-fluid brand-image" alt="" />
+                    <img src="{{asset('storage/images/')}}/{{$client->image}}" class="img-fluid brand-image" alt="" />
                 </div>
                 @endforeach
             </div>
